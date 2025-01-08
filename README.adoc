@@ -2,21 +2,29 @@
 :icons: font
 :MoSCoW: https://fr.wikipedia.org/wiki/M%C3%A9thode_MoSCoW[MoSCoW]
 
-Ce dépôt concerne les rendus de mailto:A_changer@etu.univ-tlse2.fr[Jonh Doe].
+Ce dépôt concerne les rendus de mailto:tanguy.picuira@etu.univ-tlse2.fr[Tanguy Picuira].
 
 == TP1
 
-.Exemple de code
+.Contenu du fichier is_it_friday.feature
 [source,java]
----
-@Given("today is Sunday")
-public void today_is_sunday() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
----
+Feature: Est-ce vendredi ?
+    Scenario Outline: Vérifier si c'est vendredi
+        Given qu'aujourd'hui c'est "<day>"
+        When je demande si c'est vendredi
+        Then on devrait me dire "<answer>"
+    Examples:
+        | day            | answer |
+        | Vendredi       | Oui    |
+        | Dimanche       | Non    |
+        | Lundi          | Non    |
+        | anything else! | Non    |
 
-.Exemple d'image insérée en asciidoc
-image::artifacts-r303.svg[width=80%]
+Exécution de la commande suivante:
+[source,java]
+mvn test
 
-== TP2...
+Résultat:
+
+.Capture d’écran de l’exécution avec succès des tests
+image::SuccessTestsTP1QualDev.png[width=80%]
