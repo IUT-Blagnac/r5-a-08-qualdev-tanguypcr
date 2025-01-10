@@ -31,7 +31,7 @@ mvn test
 Résultat:
 
 .Capture d’écran de l’exécution avec succès des tests
-image::SuccessTestsTP1QualDev.png[width=80%]
+image::images/SuccessTestsTP1QualDev.png[width=80%]
 
 == TP2
 
@@ -78,4 +78,4 @@ public class Order {
 Résultat:
 
 .Capture d’écran de l’exécution avec succès des tests
-image::SuccessTestsTP2QualDev.png[width=80%]
+image::images/SuccessTestsTP2QualDev.png[width=80%]
