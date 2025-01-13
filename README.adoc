@@ -112,7 +112,17 @@ image::images/SuccessTestsTP3QualDev.png[width=80%]
 
 === mvn test | Select-Object -Last 16 | Out-File report.txt (windows)
 
-[source,shell]
+[source, shell]
 ----
-include::TP1-QualDev/report.txt[]
+include::TP1-QualDev/hellocucumber/report.txt[]
 ----
+
+Comme l'include ne fonctionne pas je vais mettre un screen du fichier
+
+.Capture d'écran du fichier report.txt du TP1
+image::images/reporttxtHelloCucumber.png[width=80%]
+
+=== Cukedoctor
+image::images/cukeDoctor.png[width=80%]
+
+Enfin, Serenity n'a pas fonctionné.
