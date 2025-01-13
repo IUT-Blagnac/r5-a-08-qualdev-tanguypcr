@@ -104,6 +104,7 @@ Feature: Validating a TODO list
 ----
 
 Résultat:
+
 .Capture d’écran de l’exécution avec succès des tests
 image::images/SuccessTestsTP3QualDev.png[width=80%]
 
