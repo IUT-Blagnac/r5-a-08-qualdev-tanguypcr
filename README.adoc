@@ -106,3 +106,12 @@ Feature: Validating a TODO list
 Résultat:
 .Capture d’écran de l’exécution avec succès des tests
 image::images/SuccessTestsTP3QualDev.png[width=80%]
+
+== TP4
+
+=== mvn test | Select-Object -Last 16 | Out-File report.txt (windows)
+
+[source,shell]
+----
+include::TP1-QualDev/report.txt[]
+----
